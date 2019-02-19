@@ -1,0 +1,130 @@
+* { 
+	margin: 0; 
+	padding: 0; 
+	box-sizing: border-box;
+	list-style-type: none; 
+}
+
+body { 
+	font: 13px Helvetica, Arial; 
+}
+
+button { 
+	padding: 2px 5px; 
+}
+
+/* GRID SETUP */
+[class*='col-'] {
+    float: left; 
+    min-height: 1px; 
+    width: 16.66%; 
+    /*-- our gutter -- */
+    padding: 12px; 
+}
+.col-1{ width: 5%; }
+.col-2{ width: 10%; }
+.col-3{ width: 15%; }
+.col-4{ width: 20%; }
+.col-5{ width: 25%; }
+.col-6{ width: 30%; }
+.col-7{ width: 35%; }
+.col-8{ width: 40%; }
+.col-9{ width: 45%; }
+.col-10{ width: 50%; }
+.col-11{ width: 55%; }
+.col-12{ width: 60%; }
+.col-13{ width: 65%; }
+.col-14{ width: 70%; }
+.col-15{ width: 75%; }
+.col-16{ width: 80%; }
+.col-17{ width: 85%; }
+.col-18{ width: 90%; }
+.col-19{ width: 95%; }
+.col-20{ width: 100%; }
+
+
+.outline, .outline *{
+    outline: 1px solid #F6A1A1; 
+}
+
+/*-- some extra column content styling --*/
+[class*='col-']{
+ padding: 0;
+ margin: 0;
+ text-align: center; 
+}
+
+/*-- our cleafix hack -- */ 
+.row:before, 
+.row:after {
+    content:"";
+    display: table ;
+    clear:both;
+}
+
+.document { 
+	margin: 2px; 
+	border: 2px solid green; 
+}
+
+.document li {
+	padding: 1px 2px;
+}
+
+#main-nav {
+	text-align: left;
+}
+
+#home, .collectionLink{
+	display: inline-block;
+}
+
+#home:hover, .collectionLink:hover {
+	cursor: pointer;
+}
+
+.collectionLink {
+	color: #005ce6;
+	text-decoration: underline;
+}
+
+#main-nav {
+	color: white;
+	background-color: #001933;
+	padding: 5px;
+}
+
+.inline-div {
+	width: 50%;
+	display: inline-block;
+}
+
+.leftalign {
+	display: block;
+	text-align:left;
+}
+
+.rightalign {
+	display: block;
+	text-align:right;
+}​
+
+.left-content-col {
+	background: #123456;
+	border: 1px solid red;
+}
+
+#main-content-row {
+	margin-top: 10px;
+}
+
+#left-content-col {
+	padding: 5px;
+	border: 2px solid grey;
+	border-radius: 15px;
+	background: #eee;
+}
+
+#main-content-col li:nth-child(odd) { 
+	background: #eee; 
+}
